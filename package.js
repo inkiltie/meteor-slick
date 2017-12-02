@@ -1,8 +1,8 @@
 Package.describe({
   summary: "the last carousel you'll ever need",
-  name:    "udondan:slick",
-  version: "1.3.11_1",
-  git:     "https://github.com/udondan/meteor-slick"
+  name:    "markovchainz:slick",
+  version: "1.8.1",
+  git:     "https://github.com/markovchainz/meteor-slick"
 });
 
 Package.onUse(function(api) {
@@ -12,17 +12,16 @@ Package.onUse(function(api) {
   api.use('jquery', 'client');
   
   api.addFiles([
-    "vendor/slick/slick/ajax-loader.gif",
-    "vendor/slick/slick/fonts/slick.eot",
-    "vendor/slick/slick/fonts/slick.svg",
-    "vendor/slick/slick/fonts/slick.ttf",
-    "vendor/slick/slick/fonts/slick.woff"
+    "vendor/slick/ajax-loader.gif",
+    "vendor/slick/fonts/slick.eot",
+    "vendor/slick/fonts/slick.svg",
+    "vendor/slick/fonts/slick.ttf",
+    "vendor/slick/fonts/slick.woff"
   ], "client", { isAsset: true });
   
   api.addFiles([
-    "vendor/slick/slick/slick.css",
-    "vendor/slick/slick/slick.js",
-    "lib/overrides.css"
+    "vendor/slick/slick.css",
+    "vendor/slick/slick.js"
   ], "client");
   
 });
